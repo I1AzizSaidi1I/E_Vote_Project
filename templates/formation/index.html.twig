@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}hello world{% endblock %}
+
+{% block body %}
+    {% for key, value in table %}
+        <div class="example-wrapper">
+            <h1>Hello formation! ✅</h1>
+            <h2>{{ key }}</h2>
+            <p>{{ value }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
