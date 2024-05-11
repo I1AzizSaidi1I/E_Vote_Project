@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block TitlePage %}Add Person{% endblock %}
+
+{% block body %}
+
+    {{ dump(person) }}
+    <div class="alert alert-success">
+        {{ person.firstName }} {{ person.lastName }} a {{ person.age }} ans
+    </div>
+
+{% endblock %}

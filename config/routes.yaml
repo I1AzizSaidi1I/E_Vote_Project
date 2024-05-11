@@ -1,3 +1,17 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+
+
+login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+
+register:
+    path: /register
+    controller: App\Controller\SecurityController::register
+
+
+forget :
+    path: /forget
+    controller: App\Controller\SecurityController::forget

@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Login - E_VoteProject{% endblock %}
+
+{% block body %}
+
+    <body class="login-page" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6IntmY2E2N2Y0MS03NzZiLTQzOGEtOTM4Mi02NjIxNzE4NTg2MTV9IiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjEuOS4xNSIsInNjb3JlIjoxMDkxNX1d" style="min-height: 466px;" data-new-gr-c-s-check-loaded="8.912.0" data-gr-ext-installed="">
+    <div class="login-box" bis_skin_checked="1">
+        <!-- /.login-logo -->
+        <div class="card card-outline card-primary" bis_skin_checked="1">
+            <div class="card-header text-center" bis_skin_checked="1">
+                <a href="../../index2.html" class="h1"><b>E_Vote</b>Project</a>
+            </div>
+            <div class="card-body" bis_skin_checked="1">
+                <p class="login-box-msg">Sign in to start your session</p>
+
+                <form action="../../index3.html" method="post">
+                    <div class="input-group mb-3" bis_skin_checked="1">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <div class="input-group-append" bis_skin_checked="1">
+                            <div class="input-group-text" bis_skin_checked="1">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3" bis_skin_checked="1">
+                        <input type="password" class="form-control" placeholder="Password">
+                        <div class="input-group-append" bis_skin_checked="1">
+                            <div class="input-group-text" bis_skin_checked="1">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" bis_skin_checked="1">
+                        <div class="col-8" bis_skin_checked="1">
+                            <div class="icheck-primary" bis_skin_checked="1">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">
+                                    Remember Me
+                                </label>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-4" bis_skin_checked="1">
+                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </form>
+
+                <div class="social-auth-links text-center mt-2 mb-3" bis_skin_checked="1">
+                    <a href="#" class="btn btn-block btn-primary">
+                        <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+                    </a>
+                    <a href="#" class="btn btn-block btn-danger">
+                        <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+                    </a>
+                </div>
+                <!-- /.social-auth-links -->
+
+                <p class="mb-1">
+                    <a href={{ path('forget') }}>I forgot my password</a>
+                </p>
+                <p class="mb-0">
+                    <a href={{path('register')}} class="text-center">Register a new membership</a>
+
+                </p>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+    <!-- /.login-box -->
+
+
+
+    </body>
+
+{% endblock %}

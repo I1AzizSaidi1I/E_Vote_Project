@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %} hello world{% endblock %}
+{% block title %}Home- E_VoteProject{% endblock %}
 
 {% block body %}
 
@@ -860,7 +860,9 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    Start creating your amazing application!
+                                    <div class="alert alert-success">
+                                        {{ Person.firstName }} {{ Person.lastName}} a {{ Person.age }} ans
+                                    </div>
                                 </div>
                                 <!-- /.card-body -->
                                 <div class="card-footer">

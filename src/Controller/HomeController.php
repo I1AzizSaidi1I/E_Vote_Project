@@ -16,5 +16,28 @@ class HomeController extends AbstractController
         ]);
     }
 
+    #[Route('/login', name: 'app_login')]
+    public function login(): Response
+    {
+        return $this->render('home/login.html.twig', [
+
+        ]);
+    }
+
+    #[Route('/register', name: 'app_register')]
+    public function register(): Response
+    {
+        return $this->render('home/register.html.twig', [
+
+        ]);
+    }
+
+    #[Route('/forget', name: 'app_forget')]
+    public function forget(): Response
+    {
+        return $this->render('home/forget.html.twig', [
+
+        ]);
+    }
 
 }

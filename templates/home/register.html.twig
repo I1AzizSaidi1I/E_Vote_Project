@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register - E_VoteProject{% endblock %}
+
+{% block body %}
+
+    <body class="register-page" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6IntmY2E2N2Y0MS03NzZiLTQzOGEtOTM4Mi02NjIxNzE4NTg2MTV9IiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjEuOS4xNSIsInNjb3JlIjoxMDkxNX1d" style="min-height: 542px;" data-new-gr-c-s-check-loaded="8.912.0" data-gr-ext-installed="">
+    <div class="register-box" bis_skin_checked="1">
+        <div class="card card-outline card-primary" bis_skin_checked="1">
+            <div class="card-header text-center" bis_skin_checked="1">
+                <a href="../../index2.html" class="h1"><b>E_Vote</b>Project</a>
+            </div>
+            <div class="card-body" bis_skin_checked="1">
+                <p class="login-box-msg">Register a new membership</p>
+
+                <form action="{{ path('app_registration') }}" method="post">
+                    <div class="input-group mb-3" bis_skin_checked="1">
+                        <input type="text" class="form-control" placeholder="Full name" name="full_name">
+                        <div class="input-group-append" bis_skin_checked="1">
+                            <div class="input-group-text" bis_skin_checked="1">
+                                <span class="fas fa-user"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3" bis_skin_checked="1">
+                        <input type="email" class="form-control" placeholder="Email" name="email">
+                        <div class="input-group-append" bis_skin_checked="1">
+                            <div class="input-group-text" bis_skin_checked="1">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3" bis_skin_checked="1">
+                        <input type="password" class="form-control" placeholder="Password" name="password">
+                        <div class="input-group-append" bis_skin_checked="1">
+                            <div class="input-group-text" bis_skin_checked="1">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3" bis_skin_checked="1">
+                        <input type="password" class="form-control" placeholder="Retype password" name="retry_password">
+                        <div class="input-group-append" bis_skin_checked="1">
+                            <div class="input-group-text" bis_skin_checked="1">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" bis_skin_checked="1">
+                        <div class="col-8" bis_skin_checked="1">
+                            <div class="icheck-primary" bis_skin_checked="1">
+                                <input type="checkbox" id="agreeTerms" name="terms" value="agree" name="agree">
+                                <label for="agreeTerms">
+                                    I agree to the <a href="#">terms</a>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-4" bis_skin_checked="1">
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </form>
+
+                <div class="social-auth-links text-center" bis_skin_checked="1">
+                    <a href="#" class="btn btn-block btn-primary">
+                        <i class="fab fa-facebook mr-2"></i>
+                        Sign up using Facebook
+                    </a>
+                    <a href="#" class="btn btn-block btn-danger">
+                        <i class="fab fa-google-plus mr-2"></i>
+                        Sign up using Google+
+                    </a>
+                </div>
+
+                <a href={{ path('login')}} class="text-center">I already have a membership</a>
+            </div>
+            <!-- /.form-box -->
+        </div><!-- /.card -->
+    </div>
+    <!-- /.register-box -->
+    </body>
+
+{% endblock %}

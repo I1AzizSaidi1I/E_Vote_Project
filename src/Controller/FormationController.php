@@ -37,4 +37,10 @@ class FormationController extends AbstractController
         ]);
     }
 
+    #[Route('/heritage', name: 'app_formation_heritage')]
+    public function heritage(): Response
+    {
+        return $this->render('formation/heritage.html.twig');
+    }
+
 }

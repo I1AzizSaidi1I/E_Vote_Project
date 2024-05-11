@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Forget Password - E_VoteProject{% endblock %}
+
+{% block body %}
+
+    <body class="login-page" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6IntmY2E2N2Y0MS03NzZiLTQzOGEtOTM4Mi02NjIxNzE4NTg2MTV9IiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjEuOS4xNSIsInNjb3JlIjoxMDkxNX1d" style="min-height: 320px;" data-new-gr-c-s-check-loaded="8.912.0" data-gr-ext-installed="">
+    <div class="login-box" bis_skin_checked="1">
+        <div class="card card-outline card-primary" bis_skin_checked="1">
+            <div class="card-header text-center" bis_skin_checked="1">
+                <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a>
+            </div>
+            <div class="card-body" bis_skin_checked="1">
+                <p class="login-box-msg">You forgot your password? Here you can easily retrieve a new password.</p>
+                <form action="recover-password.html" method="post">
+                    <div class="input-group mb-3" bis_skin_checked="1">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <div class="input-group-append" bis_skin_checked="1">
+                            <div class="input-group-text" bis_skin_checked="1">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" bis_skin_checked="1">
+                        <div class="col-12" bis_skin_checked="1">
+                            <button type="submit" class="btn btn-primary btn-block">Request new password</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </form>
+                <p class="mt-3 mb-1">
+                    <a href={{ path('login') }}>Login</a>
+                </p>
+            </div>
+            <!-- /.login-card-body -->
+        </div>
+    </div>
+    <!-- /.login-box -->
+    </body>
+{% endblock %}
